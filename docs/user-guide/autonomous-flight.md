@@ -55,7 +55,7 @@ msg.ignore = rosflight_msgs::Command::IGNORE_NONE;
 msg.x = 0.0;
 msg.y = 0.0;
 msg.z = 0.0;
-msg.F = 0.6;
+msg.throttle = 0.6;
 ```
 
 In Python I might have:
@@ -70,7 +70,7 @@ msg.ignore = Command.IGNORE_NONE
 msg.x = 0.0
 msg.y = 0.0
 msg.z = 0.0
-msg.F = 0.6
+msg.throttle = 0.6
 ```
 I would then publish this message to the `/command` topic to forward it to the embedded flight controller.
 
